@@ -1,13 +1,3 @@
-resource "aws_instance" "web" {
-  ami           = var.ami_id
-  instance_type = var.instance_type
-  vpc_security_group_ids = [aws_security_group.robhoshop.id]
-
-  tags = {
-    Name = var.tags
-  }
-}
-
 resource "aws_security_group" "robhoshop" {
   name        = var.sg-name
   description = var.sg-description
@@ -32,4 +22,3 @@ resource "aws_security_group" "robhoshop" {
     cidr_blocks      = ["0.0.0.0/0"]
   }
 }
-
