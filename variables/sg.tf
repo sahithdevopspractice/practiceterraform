@@ -12,7 +12,7 @@ resource "aws_security_group" "robhoshop" {
     from_port = var.inbound-from-port
     to_port = 0
     protocol = "tcp"
-    cidr_blocks = var.cidr_block
+    cidr_blocks = var.cidr_blocks
   }
 
   egress {
