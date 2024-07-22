@@ -1,4 +1,4 @@
-resource "aws_security_group" "robhoshop" {
+resource "aws_security_group" "robhoshop-all" {
   name        = var.sg-name
   description = var.sg-description
   #vpc_id      = aws_vpc.main.id
