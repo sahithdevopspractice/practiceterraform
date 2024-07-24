@@ -14,7 +14,8 @@ variable "tags" {
         Name = "Hello Terraform"
         Project = "Robhoshop"
         Environment = "DEV"
-        Component = "true"
+        Component = "WEB"
+        terraform = "true"
     }
 }
 
